@@ -9,6 +9,7 @@ import './App.scss';
 import {useAuth} from "./AuthContext";
 import Catalog from "./Components/Catalog/Catalog";
 import Profile from "./Components/Profile";
+import Admin from "./Components/Admin";
 import BottomBar from "./Components/Bottombar";
 import AllCategories from "./Components/Main/AllCategories";
 import Category from "./Components/Main/Category";
@@ -28,6 +29,7 @@ function App() {
                     <Route path="/category/" element={<AllCategories/>}/>
                     <Route path="/catalog" element={<Catalog/>}/>
                     <Route path="/auth" element={<Auth/>}/>
+                    <Route path="/admin" element={<Admin/>}/>
                     <Route path="/reviews" element={<AllReviews/>}/>
                     <Route path="/review/category/:categoryId/" element={<CategoryReview/>}/>
                     <Route path="/login" element={<Login/>}/>
